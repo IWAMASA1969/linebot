@@ -9,7 +9,7 @@ class LinebotWrapper
   end
 
   def validate_signature(body, signature)
-    false unless client.validate_signature(body, signature)
+    client.validate_signature(body, signature)
   end
 
   def echo(body)
