@@ -7,7 +7,7 @@ class EchoController < ApplicationController
 
     render :nothing => true, :status => 404 and return unless bot.validate_signature(body, signature)
 
-    bot.echo(body)
+    bot.hello(body)
     render :nothing => true, :status => 200
   end
 end
